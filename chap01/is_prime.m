@@ -1,4 +1,4 @@
-function [] = isPrime(n)
+function [] = is_prime(n)
 
 flag = false;
 for i = 2:sqrt(n)

@@ -1,4 +1,4 @@
-function [days] = daysOfMonth(month)
+function [days] = days_of_month(month)
 
 switch month
     case 2
