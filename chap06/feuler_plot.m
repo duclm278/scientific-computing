@@ -13,9 +13,9 @@ actual = @(x) -(x.^2 + 1)./(2.*x);
 X = a:h:b;
 Y = actual(X);
 plot(X, Y);
+hold on;
 
 % FEuler plot
-hold on;
 for i = a:h:b
     y1 = y0 + dfy(y0, x0)*h;
     x1 = x0 + h;
@@ -25,4 +25,5 @@ for i = a:h:b
     y0 = y1;
     x0 = x1;
 end
+
 hold off
