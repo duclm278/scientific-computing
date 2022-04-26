@@ -1,6 +1,6 @@
-% lagrange(@(x) x + sin(x), 0, pi, 4);
+% lagrange1(@(x) x + sin(x), 0, pi, 4);
 
-function [result] = lagrange(fx, a, b, m)
+function [result] = lagrange1(fx, a, b, m)
 
 xk = @(k) a + k*(b - a)/m;
 
